@@ -1,14 +1,14 @@
 export const CARDS = [
   {
     id: 1,
-    imgSrc: '/src/assets/images/1.png',
+    imgSrc: './public/1.png',
     title: 'ПРОИЗВОДСТВО',
     subtitle: '',
     description: []
   },
   {
     id: 2,
-    imgSrc: '/src/assets/images/2.png',
+    imgSrc: './public/2.png',
     title: 'ПРОЕКТИРОВАНИЕ',
     subtitle: 'Мы сопровождаем вас на всех этапах проектирования, включая:',
     description: [
@@ -19,7 +19,7 @@ export const CARDS = [
   },
   {
     id: 3,
-    imgSrc: '/src/assets/images/3.png',
+    imgSrc: './public/3.png',
     title: 'КОМПЛЕКТАЦИЯ',
     subtitle:
       'Мы предоставляем полный спектр оборудования и материалов для реализации вашего проекта:',
@@ -31,7 +31,7 @@ export const CARDS = [
   },
   {
     id: 4,
-    imgSrc: '/src/assets/images/4.png',
+    imgSrc: './public/4.png',
     title: 'МОНТАЖ',
     subtitle:
       'Наши специалисты выполняют все виды электромонтажных работ в строгом соответствии с согласованным графиком:',
@@ -42,7 +42,7 @@ export const CARDS = [
   },
   {
     id: 5,
-    imgSrc: '/src/assets/images/5.png',
+    imgSrc: './public/5.png',
     title: 'НАЛАДОЧНЫЕ РАБОТЫ',
     subtitle:
       'Мы выполняем комплекс наладочных работ с высоким уровнем точности и профессионализма:',
@@ -53,7 +53,7 @@ export const CARDS = [
   },
   {
     id: 6,
-    imgSrc: '/src/assets/images/6.png',
+    imgSrc: './public/6.png',
     title: 'СДАЧА И ПОДКЛЮЧЕНИЕ',
     subtitle:
       'Завершающий этап, где мы гарантируем успешную сдачу объекта и его готовность к эксплуатации:',
@@ -87,12 +87,12 @@ export const PRODUCTS = [
   {
     id: 1,
     title: 'БКТП/БРТП в бетонной оболочке',
-    imgSrc: '/src/assets/images/slider/slide-4.jpg'
+    imgSrc: './public/slider/slide-4.jpg'
   },
-  { id: 2, title: 'КТП внутренней установки', imgSrc: '/src/assets/images/slider/slide-3.jpg' },
+  { id: 2, title: 'КТП внутренней установки', imgSrc: './public/slider/slide-3.jpg' },
   {
     id: 3,
     title: 'КТПН в металлической оболочке',
-    imgSrc: '/src/assets/images/slider/slide-2.jpg'
+    imgSrc: './public/slider/slide-2.jpg'
   }
 ]
