@@ -1,21 +1,10 @@
-<template>
-  <div>
-    <img :src="imgSrc" class="card-img" />
-    <h4>{{ title }}</h4>
-    <template v-if="showList">
-      <ul v-if="description.length > 0" class="descriptions-list">
-        <li v-for="(item, index) in description" :key="index" class="description-item">
-          {{ item }}
-        </li>
-      </ul>
-    </template>
-  </div>
-</template>
-
 <script setup>
+import UiButton from './UiButton.vue'
+
 defineProps({
   imgSrc: String,
   title: String,
+  subtitle: String,
   description: Array,
   showList: {
     type: Boolean,
@@ -24,51 +13,84 @@ defineProps({
 })
 </script>
 
+<template>
+  <div class="card">
+    <div class="card-header">
+      <img :src="imgSrc" class="card-img" />
+      <h4>{{ title }}</h4>
+    </div>
+    <span>{{ subtitle }}</span>
+    <template v-if="showList">
+      <ul v-if="description.length > 0" class="descriptions-list">
+        <li v-for="(item, index) in description" :key="index" class="description-item">
+          {{ item }}
+        </li>
+      </ul>
+      <UiButton title="Заказать" />
+    </template>
+  </div>
+</template>
+
 <style scoped>
 .card {
   display: flex;
-  align-items: center;
-  border-radius: 10px;
-  width: 250px;
-  height: 140px;
-  padding: 5px;
-  background-color: rgb(255, 255, 255, 0.6);
+  flex-direction: column;
+  gap: 12px;
+  border-radius: 24px;
+  width: 610px;
+  height: 508px;
+  padding: 24px;
+  background-color: #efeeeef0;
   transition: 0.4s;
 }
 
+.card-header {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  gap: 12px;
+}
+
 .card-img {
-  height: 100px;
-  width: 100px;
+  height: 50px;
+  width: 50px;
 }
 
 h4 {
-  text-align: center;
-  color: var(--vt-c-black-soft);
+  font-family: Inter;
+  color: black;
   font-weight: 700;
+  font-size: 26px;
+  line-height: 31.47px;
+  padding-bottom: 5px;
+}
+
+span {
+  font-family: Inter;
+  color: black;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 24.2px;
+  min-height: 80px;
 }
 
 .descriptions-list {
   display: flex;
   flex-direction: column;
+  list-style: square;
 }
 
 .description-item {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  color: var(--vt-c-black-soft);
-  font-size: 12px;
+  font-family: Inter;
+  color: black;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 24.2px;
+  margin-left: 40px;
 }
 
 .li-item_logo {
   width: 20px;
   height: 20px;
 }
-
-.card:hover {
-  background-color: rgb(255, 165, 0, 0.7);
-  transform: scale(1.02);
-}
 </style>
-
-<!-- background-color: rgba(128, 0, 33, 0.8); -->

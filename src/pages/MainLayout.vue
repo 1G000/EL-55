@@ -19,7 +19,7 @@ import AppFooter from '@/components/AppFooter.vue'
 
 <style>
 .container {
-  max-width: 1280px;
+  max-width: 1440px;
   display: flex;
   flex-direction: column;
 }

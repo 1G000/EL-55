@@ -1,15 +1,18 @@
 <template>
-  <div class="slider-section">
-    <MainSlider />
-    <CardsSection />
-  </div>
+  <HeroSection />
+  <AdvantagesSection />
+  <!-- <MainSlider /> -->
+  <ProductSection />
   <BottomSection />
 </template>
 
 <script setup>
-import MainSlider from '@/components/MainSlider.vue'
-import CardsSection from '@/components/CardsSection.vue'
+import HeroSection from '@/components/HeroSection.vue'
+import AdvantagesSection from '@/components/AdvantagesSection.vue'
 import BottomSection from '@/components/BottomSection.vue'
+import ProductSection from '@/components/ProductSection.vue'
+// import CardsSection from '@/components/CardsSection.vue'
+// import MainSlider from '@/components/MainSlider.vue'
 </script>
 
 <style scoped>
