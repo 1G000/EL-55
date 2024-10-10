@@ -39,7 +39,6 @@ defineProps({
   gap: 12px;
   border-radius: 24px;
   width: 400px;
-  padding: 24px;
   background-color: #efeeeef0;
   transition: 0.4s;
 }
@@ -49,6 +48,9 @@ defineProps({
   align-items: center;
   justify-content: left;
   gap: 12px;
+  padding-top: 24px;
+  padding-left: 24px;
+  padding-right: 24px;
 }
 
 .card-img {
@@ -62,7 +64,6 @@ h4 {
   font-weight: 700;
   font-size: 26px;
   line-height: 31.47px;
-  padding-bottom: 5px;
 }
 
 span {
@@ -72,6 +73,7 @@ span {
   font-size: 22px;
   line-height: 24.2px;
   min-height: 80px;
+  padding: 0 24px;
 }
 
 .descriptions-list {

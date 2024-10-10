@@ -41,7 +41,7 @@ li:hover {
 }
 
 h4 {
-  font-family: Inter;
+  font-family: Inter-bold;
   color: black;
   font-weight: 700;
   font-size: 26px;
@@ -53,7 +53,6 @@ h4 {
 span {
   font-family: Inter;
   color: black;
-  font-weight: 400;
   font-size: 22px;
   line-height: 24.2px;
 }

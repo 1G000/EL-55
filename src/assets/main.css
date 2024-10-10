@@ -1,5 +1,19 @@
 @import './base.css';
 
+@font-face {
+  font-family: 'Inter';
+  src: url('/public/fonts/Inter-Regular.woff2') format('truetype');
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'Inter-bold';
+  src: url('/public/fonts/Inter-Bold.woff2') format('truetype');
+  font-style: normal;
+  font-weight: 700;
+}
+
 #app {
   width: 100%;
   max-width: 1280px;

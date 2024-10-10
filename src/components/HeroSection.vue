@@ -29,17 +29,18 @@ import UiButton from './UiButton.vue'
   display: flex;
   flex-direction: column;
   gap: 30px;
-  max-width: 700px;
+  max-width: 710px;
 }
 img {
+  border: none;
   max-width: 520px;
   max-height: 520px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 h2 {
   font-family: Inter;
   color: black;
-  font-weight: 500;
   font-size: 60px;
   line-height: 64px;
   text-align: left;

@@ -29,7 +29,6 @@ defineProps({
       :showList="false"
     />
   </div>
-  <hr />
 </template>
 
 <style>

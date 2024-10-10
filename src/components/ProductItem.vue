@@ -50,10 +50,9 @@ li {
 h4 {
   width: 100%;
   height: 70px;
-  font-family: Inter;
+  font-family: Inter-bold;
   background-color: rgba(239, 238, 238, 0.8);
   color: rgb(130, 0, 31);
-  font-weight: 700;
   font-size: 26px;
   line-height: 31.47px;
   padding: 5px 25px;
@@ -63,7 +62,6 @@ h4 {
 span {
   font-family: Inter;
   color: black;
-  font-weight: 400;
   font-size: 22px;
   line-height: 24.2px;
   min-height: 80px;

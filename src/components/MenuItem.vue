@@ -13,8 +13,8 @@ defineProps({
 
 <style scoped>
 a {
-  font-size: 22px;
-  font-weight: 400;
+  font-family: Inter;
+  font-size: 18px;
   line-height: 24.2px;
 }
 </style>
