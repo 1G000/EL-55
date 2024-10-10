@@ -1,10 +1,11 @@
 <script setup>
-import UiButton from './UiButton.vue'
+import SmallButton from './SmallButton.vue'
 
 defineProps({
   imgSrc: String,
   title: String,
   subtitle: String,
+  subtitleShort: String,
   description: Array,
   showList: {
     type: Boolean,
@@ -19,15 +20,15 @@ defineProps({
       <img :src="imgSrc" class="card-img" />
       <h4>{{ title }}</h4>
     </div>
-    <span>{{ subtitle }}</span>
+    <span>{{ subtitleShort }}</span>
     <template v-if="showList">
       <ul v-if="description.length > 0" class="descriptions-list">
         <li v-for="(item, index) in description" :key="index" class="description-item">
           {{ item }}
         </li>
       </ul>
-      <UiButton title="Заказать" />
     </template>
+    <SmallButton title="Подробнее" />
   </div>
 </template>
 
@@ -37,8 +38,7 @@ defineProps({
   flex-direction: column;
   gap: 12px;
   border-radius: 24px;
-  width: 610px;
-  height: 508px;
+  width: 400px;
   padding: 24px;
   background-color: #efeeeef0;
   transition: 0.4s;

@@ -13,7 +13,7 @@ import UiButton from './UiButton.vue'
       </p>
       <UiButton title="Оставить заявку" />
     </div>
-    <img src="/public/banner img.png" />
+    <img src="/src//assets/banner img.png" />
   </div>
 </template>
 

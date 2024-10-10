@@ -24,8 +24,9 @@ defineProps({
       :imgSrc="card.imgSrc"
       :title="card.title"
       :subtitle="card.subtitle"
+      :subtitleShort="card.subtitleShort"
       :description="card.description"
-      :showList="showList"
+      :showList="false"
     />
   </div>
   <hr />

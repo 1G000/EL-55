@@ -6,6 +6,7 @@
       :imgSrc="card.imgSrc"
       :title="card.title"
       class="card"
+      :showList="false"
     />
   </div>
 </template>
