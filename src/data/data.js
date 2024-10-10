@@ -1,7 +1,7 @@
 export const CARDS = [
   {
     id: 1,
-    imgSrc: './src/assets/1.png',
+    imgSrc: new URL('@/assets/1.png', import.meta.url).href,
     title: 'ПРОИЗВОДСТВО',
     subtitle: '',
     subtitleShort: 'Производство электрооборудования для подстанций под Ваши нужды',
@@ -9,7 +9,7 @@ export const CARDS = [
   },
   {
     id: 2,
-    imgSrc: './src/assets/2.png',
+    imgSrc: new URL('@/assets/2.png', import.meta.url).href,
     title: 'ПРОЕКТИРОВАНИЕ',
     subtitle: 'Мы сопровождаем вас на всех этапах проектирования, включая:',
     subtitleShort: 'Cопровождение на всех этапах проектирования',
@@ -21,7 +21,7 @@ export const CARDS = [
   },
   {
     id: 3,
-    imgSrc: './src/assets/3.png',
+    imgSrc: new URL('@/assets/3.png', import.meta.url).href,
     title: 'КОМПЛЕКТАЦИЯ',
     subtitle:
       'Мы предоставляем полный спектр оборудования и материалов для реализации вашего проекта:',
@@ -35,7 +35,7 @@ export const CARDS = [
   },
   {
     id: 4,
-    imgSrc: './src/assets/4.png',
+    imgSrc: new URL('@/assets/4.png', import.meta.url).href,
     title: 'МОНТАЖ',
     subtitle:
       'Наши специалисты выполняют все виды электромонтажных работ в строгом соответствии с согласованным графиком:',
@@ -48,7 +48,7 @@ export const CARDS = [
   },
   {
     id: 5,
-    imgSrc: './src/assets/5.png',
+    imgSrc: new URL('@/assets/5.png', import.meta.url).href,
     title: 'НАЛАДОЧНЫЕ РАБОТЫ',
     subtitle:
       'Мы выполняем комплекс наладочных работ с высоким уровнем точности и профессионализма:',
@@ -61,7 +61,7 @@ export const CARDS = [
   },
   {
     id: 6,
-    imgSrc: './src/assets/6.png',
+    imgSrc: new URL('@/assets/6.png', import.meta.url).href,
     title: 'СДАЧА И ПОДКЛЮЧЕНИЕ',
     subtitle:
       'Завершающий этап, где мы гарантируем успешную сдачу объекта и его готовность к эксплуатации:',
@@ -96,13 +96,17 @@ export const CARDS = [
 export const PRODUCTS = [
   {
     id: 1,
-    title: 'БКТП/БРТП в бетонной оболочке',
-    imgSrc: './src/assets/slider/slide-4.jpg'
+    title: 'БКТП/БРТП в бетонной оболочке',
+    imgSrc: new URL('@/assets/slider/slide-4.jpg', import.meta.url).href
   },
-  { id: 2, title: 'КТП внутренней установки', imgSrc: './src/assets/slider/slide-3.jpg' },
+  {
+    id: 2,
+    title: 'КТП внутренней установки',
+    imgSrc: new URL('@/assets/slider/slide-3.jpg', import.meta.url).href
+  },
   {
     id: 3,
     title: 'КТПН в металлической оболочке',
-    imgSrc: './src/assets/slider/slide-2.jpg'
+    imgSrc: new URL('@/assets/slider/slide-2.jpg', import.meta.url).href
   }
 ]
